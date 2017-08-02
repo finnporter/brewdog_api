@@ -28,10 +28,11 @@ var populateBeerList = function(beers) {
 var displayBeer = function(beer) {
   var ul = document.querySelector('#beer-list');
   var liName = document.createElement('li');
+  liName.className = 'li-name';
   var liImg = document.createElement('img');
+  liImg.className = 'beer-img';
   liName.innerText = beer.name;
   liImg.src = beer.image_url;
-  liImg.height = 150;
   ul.appendChild(liName);
   ul.appendChild(liImg);
 }
